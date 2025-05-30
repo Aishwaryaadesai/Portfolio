@@ -25,13 +25,9 @@ export function CinematicNavigation() {
   ]
 
   const handleDownloadResume = () => {
-    const link = document.createElement("a")
-    link.href = "/resume/Aishwarya_Desai_Resume.pdf"
-    link.download = "Aishwarya_Desai_Resume.pdf"
-    document.body.appendChild(link)
-    link.click()
-    document.body.removeChild(link)
-  }
+  console.log("Download button clicked") // Debug log
+  window.open("/resume/Aishwarya_Desai_Resume.pdf", "_blank")
+}
 
   const handleViewProjects = () => {
     const projectsSection = document.getElementById("projects")
