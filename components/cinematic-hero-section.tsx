@@ -15,15 +15,15 @@ import {
 } from "lucide-react"
 
 export function CinematicHeroSection() {
-  const handleDownloadResume = () => {
-    // Create a link element and trigger download
-    const link = document.createElement("a")
-    link.href = "/resume/Aishwarya_Desai_Resume.pdf"
-    link.download = "Aishwarya_Desai_Resume.pdf"
-    document.body.appendChild(link)
-    link.click()
-    document.body.removeChild(link)
-  }
+  // const handleDownloadResume = () => {
+  //   // Create a link element and trigger download
+  //   const link = document.createElement("a")
+  //   link.href = "/resume/Aishwarya_Desai_Resume.pdf"
+  //   link.download = "Aishwarya_Desai_Resume.pdf"
+  //   document.body.appendChild(link)
+  //   link.click()
+  //   document.body.removeChild(link)
+  // }
 
   const handleViewProjects = () => {
     // Smooth scroll to projects section
@@ -162,7 +162,7 @@ export function CinematicHeroSection() {
 
               {/* Enhanced Action Buttons */}
               <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6">
-                <motion.button
+{/*                 <motion.button
                   onClick={handleDownloadResume}
                   whileHover={{
                     scale: 1.05,
@@ -181,7 +181,7 @@ export function CinematicHeroSection() {
                   <span>Download Resume</span>
                 </a>
 
-                </motion.button>
+                </motion.button> */}
 
                 <motion.button
                   onClick={handleViewProjects}
